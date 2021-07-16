@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Let's Chat Web App</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="kwitter.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<center>
+				<img src="http://thelovelyelopement.com/wp-content/uploads/2020/07/The_Lovely_Elopement_Lets_Chat_Icon.png">
+			</sup>
+            <h2 class="font" id="welcome"></h2>
+
+		<h3 class="color_white" id="welcome"></h3>
+		<div class="form-group input_div_room_page">
+			<label> Add Room:</label>
+			<input id="room_name" placeholder="Enter Room Name" class="form-control">
+		</div>
+		<button class="btn btn-success" onclick="addroom()">Add Room</button>
+
+        <h1 class="font">Other Rooms</h1>
+        <div id="all_rooms"></div>
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
